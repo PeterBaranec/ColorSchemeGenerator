@@ -24,8 +24,8 @@ function updateColorSchemeUI(colors) {
   colors.forEach((color) => {
     const colorHtml = `
       <div>
-        <img src="${color.image.bare}">
-        <p>${color.hex.value}</p>
+        <img src="${color.image.bare}" class="color-image">
+        <p class="color-text">${color.hex.value}</p>
       </div>
     `;
     schemeColorsEl.insertAdjacentHTML("beforeend", colorHtml);
